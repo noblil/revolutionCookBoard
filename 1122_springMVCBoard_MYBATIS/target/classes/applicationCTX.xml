@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="mvcboardVO" class="kr.koreait.vo.MvcboardVO"/>
+	<bean id="mvcboardList" class="kr.koreait.vo.MvcboardList"/>
+	
+	<!-- mybatis는 Service 클래스와 DAO 클래스를 사용하지 않기 때문에 mybatis로 코드 변환이 완료되면 아래 bean 설정은 모두 주석으로 처리한다. -->
+	<bean id="mvcboardDAO" class="kr.koreait.dao.MvcboardDAO"/>
+	<bean id="insert" class="kr.koreait.Service.InsertService"/>
+	<bean id="select" class="kr.koreait.Service.SelectService"/>
+	<bean id="increment" class="kr.koreait.Service.IncrementService"/>
+	<bean id="contentView" class="kr.koreait.Service.ContentViewService"/>
+	<bean id="delete" class="kr.koreait.Service.DeleteService"/>
+	<bean id="update" class="kr.koreait.Service.UpdateService"/>
+	<bean id="reply" class="kr.koreait.Service.ReplyService"/>
+	
+</beans>
